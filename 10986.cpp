@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//(S[j] - S[i])%M == 0
 int main() {
 	ios::sync_with_stdio(false);
 	cin.tie(0);
@@ -28,6 +28,7 @@ int main() {
     }
 
     for (int i = 0; i < M; i++) {
+		//조합 공식 사용
         if (count[i] >= 2)
             sum += count[i] * (count[i] - 1) / 2;
     }
